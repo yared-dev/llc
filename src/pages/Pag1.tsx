@@ -1,4 +1,5 @@
-
+import '../styles/Navigation.css';
+import '../styles/Pag1.css'
 
 interface Pag1Props {
     title: string;
@@ -28,7 +29,7 @@ const Pag1: React.FC<Pag1Props> = ({ title, body }) => {
 
                     <div className="column flex-column">
                         <div className="separator background-white"></div>
-                        <div className="content derecha">
+                        <div className="content right">
                             <p>RTI is not just a global industrial solutions provider, we are a shutdown services partner. Working with us, you get big picture thinking with detailed technical execution to improve performance and profitability.</p>
                         </div>
                     </div>

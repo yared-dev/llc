@@ -11,3 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%; /* Ancho 100% de la ventana del navegador */
+}
+
+
+.flex-column{
+  flex-direction: column;
+}
+
+.background-white{
+  background-color: white;
+}
+
+.background-green{
+  background-color: #6CC24A;
+}
+
+.flex1{
+  flex: 1;
+}

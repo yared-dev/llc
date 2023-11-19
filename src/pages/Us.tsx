@@ -1,19 +1,26 @@
+import Tittle from '../components/Tittle';
 import '../styles/Navigation.css';
-import '../styles/Pag1.css'
+import '../styles/Us.css'
 
-interface Pag1Props {
-    title: string;
-    body: string;
-}
 
-const Pag1: React.FC<Pag1Props> = ({ title, body }) => {
+const Us = () => {
+
+    const text_ = '"Then and Now… I am commited to serve"';
+    const toLight_ = ["I am", "to serve"];
+    const subText = "Isabel Gonzalez Eforce Us Navy Reserve";
+
     return (
 
-        <div id="menu1" className="flex-column">
-            <div className='fullscreen background-image backImagePag1 gap-p1-secction'>
-                <div className="sec1 container flex-column">
-                    <h4>{title}</h4>
-                    <h1>{body}</h1>
+        <div id="us" className="flex-column color-primary">
+            <div className='fullscreen gap-p1-secction'>
+                <div className="container sec1">
+                    <div className='column flex-column'>
+                        <Tittle tittle={text_} toLight={toLight_} colorLight='color-secondary' />
+                        <h4>{subText}</h4>
+                    </div>
+                    <div className='column background-image ImageAboutUs'>
+                       <img />
+                    </div>
                 </div>
             </div>
             <div className="fullscreen">
@@ -41,4 +48,4 @@ const Pag1: React.FC<Pag1Props> = ({ title, body }) => {
     );
 };
 
-export default Pag1;
+export default Us;

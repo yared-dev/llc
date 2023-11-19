@@ -19,18 +19,3 @@ html, body {
 }
 
 
-.flex-column{
-  flex-direction: column;
-}
-
-.background-white{
-  background-color: white;
-}
-
-.background-green{
-  background-color: #6CC24A;
-}
-
-.flex1{
-  flex: 1;
-}

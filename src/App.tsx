@@ -2,13 +2,13 @@
 import Navigation from './components/Navigation';
 
 import './App.css';
-import Pag1 from './pages/Pag1';
+import Us from './pages/Us';
 
 function App() {
   return (
 <>
 <Navigation/>
-    <Pag1 title='CAPABILITIES' body="Do it right the first time. Save on cost every time."/>
+    <Us />
  
 </>
    

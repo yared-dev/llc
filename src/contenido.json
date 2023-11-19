@@ -1,0 +1,110 @@
+{
+    "home": {
+        "es": {
+            "seccion1": [
+                "Antes y ahora… estoy comprometido a servir"
+            ],
+            "translate": [
+                "estoy",
+                "servir"
+            ]
+        },
+        "en": {
+            "seccion1": [
+                "Then and Now… I am commited to serve"
+            ],
+            "translate": [
+                "I am",
+                "serve"
+            ]
+        }
+    },
+    "expertice": {
+        "es": {
+            "seccion1": [
+                {
+                    "tittle": "EXPERIENCIA",
+                    "description": "esta es una en español"
+                },
+                {
+                    "tittle": "PREVISIBILIDAD",
+                    "description": "La seguridad está diseñada en nuestros procesos."
+                },
+                {
+                    "tittle": "INNOVACION",
+                    "description": "31 patenten y mas por venir"
+                }
+            ],
+            "translate": []
+        },
+        "en": {
+            "seccion1": [
+                {
+                    "tittle": "EXPERTISE",
+                    "description": "this is a proove in english"
+                },
+                {
+                    "tittle": "PREDICTABILITY",
+                    "description": "Safety is designed into our processes."
+                },
+                {
+                    "tittle": "INNOVATION",
+                    "description": "31 patents with more pending"
+                }
+            ],
+            "translate": []
+        }
+    },
+    "score": {
+        "es": {
+            "TRIR (6-Year Avg.)": 0.00,
+            "TA Projects / Year": 0.00,
+            "RX Applications / Year": 0.00,
+            "Regional Offices": 0.00,
+            "Years of Operations Experience": 0.00,
+            "Patents": 0.00
+        },
+        "en": {
+            "TRIR (6-Year Avg.)": 0.00,
+            "TA Projects / Year": 0.00,
+            "RX Applications / Year": 0.00,
+            "Regional Offices": 0.00,
+            "Years of Operations Experience": 0.00,
+            "Patents": 0.00
+        }
+    },
+    "Our Services": {
+        "es": {
+            "seccion": [
+                {
+                    "tittle": "Ready To Serve, Ready To Guide and Never Quit",
+                    "description": "Pongo mi Empresa al Servicio de Tu negocio."
+                },
+                {
+                    "tittle": "We help you improve performance and reduce cost.",
+                    "description": "Servicios de Limpieza Comercial y Residencial"
+                },
+                {
+                    "tittle": "Servicios de Construccion y Obras",
+                    "description": "As for me and my House, we will serve The Lord Joshua 24:15"
+                }
+            ]
+        },
+        "en": {
+            "seccion": [
+                {
+                    "tittle": "Ready To Serve, Ready To Guide and Never Quit",
+                    "description": "Pongo mi Empresa al Servicio de Tu negocio."
+                },
+                {
+                    "tittle": "We help you improve performance and reduce cost.",
+                    "description": "Servicios de Limpieza Comercial y Residencial"
+                },
+                {
+                    "tittle": "Servicios de Construccion y Obras",
+                    "description": "As for me and my House, we will serve The Lord Joshua 24:15"
+                }
+            ]
+        }
+    }
+}

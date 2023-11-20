@@ -1,0 +1,231 @@
+:root{
+  --sec1-font-size : 5rem;
+  
+}
+
+.ImageSec1 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(23, 24, 25, 0) 100%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url("../../public/img/pages/AboutUs/example2.jpg")
+}
+
+
+#aboutUs {
+  font-weight: 400;
+  font-family: "GT America Condensed Medium", Helvetica, Arial, Lucida,
+    sans-serif;
+ color:var(--color-primary);
+ align-items: center;
+}
+
+#aboutUs .sec1 {
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows:  40rem;
+  font-stretch: condensed;
+}
+
+
+
+#aboutUs .sec1 .left{
+  padding-left: calc(var(--padding-left-decorator) - 3rem);
+    padding-right: 2rem;
+  justify-content: center;
+  position: relative;
+}
+
+#aboutUs .sec1 .left button{
+  font-weight: bold;
+  text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+#aboutUs .sec1 .left button:hover{
+  background-color: var(--color-secondary)!important;
+  color: white;
+}
+
+#aboutUs .sec1 .left .decoration{
+  position: absolute;
+    width: calc(var(--padding-left-decorator) - 2rem);
+   top:0;
+   bottom:0;
+    left: calc(0rem - var(--padding-left-decorator));
+}
+
+#aboutUs .sec1 h1 {
+  font-size: var(--sec1-font-size);
+  margin: 0px;
+}
+
+#aboutUs .sec1 h4 {
+  text-transform: uppercase;
+  font-size: 1.26rem;
+  margin-bottom: 5px;
+}
+
+#aboutUs .separator {
+  height: 7rem;
+  grid-column: 2;
+ 
+}
+
+#aboutUs .sec1 .button_container {
+  width: 15rem;
+  padding: 1rem 0;
+  border: 3px solid var(--color-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+
+/* sec 2*/
+
+.ImageSec2 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(23, 24, 25, 0) 100%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url("../../public/img/pages/AboutUs/team.jpg") !important;
+}
+
+#aboutUs .sec2 {
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows:  28rem;
+}
+
+
+#aboutUs .sec2 .right{
+ padding: 0px 3rem;
+ justify-content: center;
+ background-color: var(--color-primary);
+ color: white;
+}
+
+
+#aboutUs .sec2 h2 {
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1.14em;
+  color: var(--color-secondary);
+}
+
+
+/*sec3 metrics*/
+#aboutUs .sec3 {
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  grid-auto-rows:  1fr;
+  grid-row-gap: 1rem;
+}
+
+#aboutUs .sec3 .metric:first-child{
+  border: none;
+}
+#aboutUs .sec3 .metric{
+   border-left: 1px solid var(--color-primary);
+ align-items: center;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+#aboutUs .sec3 .metric h2{
+  font-weight: 900;
+  font-size: 2rem;
+  margin: 0;
+  color: var(--color-secondary);
+}
+
+#aboutUs .sec3 .metric p{
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+/* Media query para tablets */
+@media only screen and (width< 1120px) {
+ :root{
+  --padding-topBottom: 5rem;
+    --padding-left-decorator: 6rem;
+    --sec1-font-size : 4rem;
+ }
+ 
+ #aboutUs .sec1{
+  grid-auto-rows: 35rem 40rem;
+ }
+
+  #aboutUs .sec1 .left .decoration {
+    width: calc(var(--padding-left-decorator) - 1rem);
+  }
+
+
+  #aboutUs .separator {
+    height: 5rem;
+  }
+
+  #aboutUs .sec2 h2 {
+    font-size: 1.2rem;
+  }
+  
+}
+
+@media only screen and (width< 800px) {
+  :root{
+    --sec1-font-size : 3.5rem;
+  }
+  #aboutUs .sec1{
+    grid-template-columns: 1fr;
+    grid-auto-rows: 30rem 40rem;
+  }
+
+  #aboutUs .separator {
+    grid-column: 1;
+  }
+
+  #aboutUs .content{
+    width: 100vw;
+  }
+
+  #aboutUs .sec2{
+    grid-template-columns: 1fr;
+    grid-auto-rows: 30rem;
+  }
+
+  #aboutUs .sec2 .right {
+    padding: 0px 5rem;
+  }
+
+  #aboutUs .sec3 {
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  }
+
+  #aboutUs .sec3 .metric{
+    border: none;
+  }
+
+}
+
+/* smartphone */
+@media only screen and (width< 500px) {
+  :root{
+    --sec1-font-size : 3rem;
+  }
+  #aboutUs .separator {
+    height: 3rem;
+  }
+
+  #aboutUs .sec3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #aboutUs .sec3 .metric{
+    width: 60%;
+    min-width: 13rem;
+  }
+
+}

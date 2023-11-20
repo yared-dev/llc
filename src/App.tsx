@@ -2,13 +2,15 @@
 import Navigation from './components/Navigation';
 
 import './App.css';
-import Us from './pages/Us';
+import Us from './pages/AboutUs';
+import OurServices from './pages/OurServices';
 
 function App() {
   return (
 <>
 <Navigation/>
     <Us />
+    <OurServices/>
  
 </>
    

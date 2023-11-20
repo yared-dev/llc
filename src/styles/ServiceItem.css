@@ -1,0 +1,12 @@
+#ourServices .sec3 .service-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+#ourServices .sec3 .service-item .serv-title{
+    border: 3px solid red;
+    padding: 10px;
+}

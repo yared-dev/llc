@@ -5,7 +5,8 @@
   --navbar-width: 70em;
   --fontsize-header: 1rem;
   --gap-p1-secction: 5rem;
-  --padding-left-container: 10rem;
+  --padding-left-decorator: 10rem;
+
 }
 
 
@@ -17,6 +18,10 @@
   background-color: var(--color-secondary);
 }
 
+.background-color-primary{
+  background-color: var(--color-primary);
+}
+
 .color-primary{
   color:var(--color-primary);
 }
@@ -26,12 +31,12 @@
   color:var(--color-secondary);
 }
 
-.flex-column{
-  flex-direction: column;
+.flex-1{
+  flex: 1;
 }
 
-.flex1{
-  flex: 1;
+.flex-column{
+  flex-direction: column;
 }
 
 
@@ -40,62 +45,51 @@
   height: 100%;
   background-size: cover;
   background-position: center;
+  
 }
 
-.container {
- 
+.grid{
+  display: grid;
 }
 
-.column {
-  flex: 1;
+.flex {
   display: flex;
 }
 
 .content {
-  box-sizing: border-box;
+  
+  width: 80%;
+  max-width: 1300px;
+  
+}
+
+.margin-bottom{
+  margin-bottom: 3rem;
+}
+
+.width-100{
   width: 100%;
-  overflow: hidden;
-  height: 100%;
-}
-
-
-
-/* Media query para tablets */
-@media (width< 1100px) {
-  /* Estilos específicos para tablets */
-
-  :root {
-    --navbar-width: 80%;
-    --fontsize-header: 0.8rem;
-    --header-size: 5em;
-    --gap-p1-secction: 3rem;
-  }
-
-  .container {
-    padding: 5px 20px;
-  }
-}
-
-@media (600px < width < 900px) {
-  :root {
-    --navbar-width: 90%;
-    --fontsize-header: 0.7rem;
-  }
 }
 
 /* Media query para tablets */
-@media (width< 760px) {
+@media  only screen and (width< 1250px) {
   /* Estilos específicos para tablets */
+
   :root {
     --navbar-width: 95%;
     --fontsize-header: 1.2rem;
-    --gap-p1-secction: 1rem;
+    
   }
-  
+  .content{
+    width: 85vw;
+    max-width: 1100px;
+   }
 
-  .container {
-    padding: 5px 20px;
-    max-width: 600px;
-  }
+}
 
+/* smartphone */
+@media only screen and (width< 1120px) {
+ .content{
+  width: 90vw;
+ }
 }

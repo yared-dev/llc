@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { MdMenu } from "react-icons/md";
 import { MdClose } from "react-icons/md";
+import '../styles/Navigation.css';
 
 const Navigation = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -69,7 +70,7 @@ const Navigation = () => {
           </a>{" "}
         </div>
 
-        <ul className={`items ${menuOpen ? "open" : ""}`}>{listaElementos}</ul>
+        <ul className={`items background-white ${menuOpen ? "open" : ""}`}>{listaElementos}</ul>
       </nav>
     </div>
   );

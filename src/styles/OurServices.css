@@ -1,0 +1,36 @@
+#ourServices{
+    font-stretch: condensed;
+    font-weight: 400;
+  font-family: "GT America Condensed Medium", Helvetica, Arial, Lucida;
+    align-items: center;
+}
+
+#ourServices .sec1{
+    flex-direction: row;
+    display: flex;
+   
+}
+
+#ourServices .sec1 h1{
+    margin: 0;
+    margin-right: 14rem;
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+#ourServices .sec1 .separator{
+    margin: 20px 0px;
+}
+
+#ourServices .sec2 h1{
+    width: 40rem;
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 2.3rem;
+}
+
+#ourServices .sec3{
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-auto-rows: 1fr;
+}
+

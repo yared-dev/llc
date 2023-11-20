@@ -23,39 +23,39 @@ const Navigation = () => {
 
   const MenuList = [
     {
-      tittle: "MENU 1",
+      tittle: "About Us",
       childs: [],
       clicked: true,
-      redirection: "/",
+      redirection: "#aboutUs",
     },
     {
-      tittle: "MENU 2",
+      tittle: "Our Services",
       childs: [],
       clicked: true,
-      redirection: "/",
+      redirection: "#ourServices",
     },
     {
-      tittle: "MENU 3",
+      tittle: "My Story",
       childs: [],
       clicked: true,
-      redirection: "/",
+      redirection: "#myStory",
     },
     {
-      tittle: "MENU 4",
+      tittle: "Contact Us",
       childs: [],
       clicked: true,
-      redirection: "/",
+      redirection: "#",
     },
     {
       tittle: "MENU 5",
       childs: [],
       clicked: true,
-      redirection: "/",
+      redirection: "#",
     },
   ];
   const listaElementos = MenuList.map((elemento, index) => (
     <li key={index}>
-      <a href="#menu1" onClick={() => setMenuOpen(false)}>
+      <a href={elemento.redirection} onClick={() => setMenuOpen(false)}>
         {elemento.tittle}
       </a>
     </li>

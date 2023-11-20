@@ -1,7 +1,19 @@
 :root{
-  --sec1-font-size : 5rem;
-  
+  --sec1-font-size : 4rem;
 }
+
+#aboutUs .sec1 .left button{
+  visibility: hidden;
+  opacity: 0; 
+  animation: fadeIn 3s; 
+}
+
+
+#aboutUs .sec1 .left.finished button{
+  opacity: 1;
+  visibility: visible;
+}
+
 
 .ImageSec1 {
   background-image: linear-gradient(
@@ -23,8 +35,9 @@
 
 #aboutUs .sec1 {
   grid-template-columns: 1fr 1fr;
-  grid-auto-rows:  40rem;
+  grid-auto-rows:  30rem;
   font-stretch: condensed;
+  
 }
 
 
@@ -34,6 +47,7 @@
     padding-right: 2rem;
   justify-content: center;
   position: relative;
+  animation: slideInLeft 3s;
 }
 
 #aboutUs .sec1 .left button{
@@ -41,11 +55,18 @@
   text-transform: uppercase;
     font-size: 1.4rem;
     font-weight: 800;
+     
+	-webkit-transition: all ease 0.8s;
+	-moz-transition: all ease 0.8s;
+	transition: all ease 0.8s;
+    animation: fadeIn 3s;
 }
 
 #aboutUs .sec1 .left button:hover{
-  background-color: var(--color-secondary)!important;
+  
   color: white;
+  box-shadow: inset 20rem 0 0 0 var(--color-secondary);
+    
 }
 
 #aboutUs .sec1 .left .decoration{
@@ -75,7 +96,7 @@
 
 #aboutUs .sec1 .button_container {
   width: 15rem;
-  padding: 1rem 0;
+  padding: 0.6rem 0;
   border: 3px solid var(--color-secondary);
   display: flex;
   align-items: center;
@@ -102,10 +123,10 @@
 
 
 #aboutUs .sec2 .right{
- padding: 0px 3rem;
- justify-content: center;
- background-color: var(--color-primary);
- color: white;
+  padding: 3rem 3rem;
+  justify-content: space-between;
+  background-color: var(--color-primary);
+  color: white;
 }
 
 
@@ -147,7 +168,7 @@
 }
 
 /* Media query para tablets */
-@media only screen and (width< 1120px) {
+@media only screen and (width < 1120px) {
  :root{
   --padding-topBottom: 5rem;
     --padding-left-decorator: 6rem;
@@ -162,18 +183,27 @@
     width: calc(var(--padding-left-decorator) - 1rem);
   }
 
+  
 
   #aboutUs .separator {
     height: 5rem;
+  }
+
+  #aboutUs.margin-bottom{
+    margin-bottom: 7rem;
   }
 
   #aboutUs .sec2 h2 {
     font-size: 1.2rem;
   }
   
+  #aboutUs .sec3 {
+    gap: 2rem;
+  }
+
 }
 
-@media only screen and (width< 800px) {
+@media only screen and (width < 800px) {
   :root{
     --sec1-font-size : 3.5rem;
   }
@@ -188,6 +218,7 @@
 
   #aboutUs .content{
     width: 100vw;
+    padding: 0px
   }
 
   #aboutUs .sec2{
@@ -196,12 +227,15 @@
   }
 
   #aboutUs .sec2 .right {
-    padding: 0px 5rem;
+    padding: 5rem;
   }
 
   #aboutUs .sec3 {
-    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    width: 90%;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 5%;
   }
+
 
   #aboutUs .sec3 .metric{
     border: none;
@@ -210,7 +244,7 @@
 }
 
 /* smartphone */
-@media only screen and (width< 500px) {
+@media only screen and (width < 650px) {
   :root{
     --sec1-font-size : 3rem;
   }
@@ -222,10 +256,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap:3rem;
   }
   #aboutUs .sec3 .metric{
-    width: 60%;
-    min-width: 13rem;
+    width: 15rem;    
+    height: 6rem;
+ 
   }
 
 }

@@ -1,34 +1,34 @@
-#ourServices{
+#myStory{
     font-stretch: condensed;
     font-weight: 400;
   font-family: "GT America Condensed Medium", Helvetica, Arial, Lucida;
     align-items: center;
 }
 
-#ourServices .sec1{
+#myStory .sec1{
     flex-direction: row;
     display: flex;
 }
 
-#ourServices .sec1 h1{
+#myStory .sec1 h1{
     margin: 0;
     margin-right: 14rem;
     font-weight: 800;
     font-size: 3rem;
 }
 
-#ourServices .sec1 .separator{
+#myStory .sec1 .separator{
     margin: 12px 0px;
 }
 
-#ourServices .sec2 h1{
+#myStory .sec2 h1{
     width: 40rem;
     font-weight: 800;
     font-size: 2rem;
     line-height: 2.7rem;
 }
 
-#ourServices .sec3{
+#myStory .sec3{
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     grid-auto-rows: 1fr;
     color: var(--color-primary);
@@ -36,38 +36,38 @@
 
 
 @media only screen and (width< 1120px) {
-#ourServices .sec1 h1{
+#myStory .sec1 h1{
     margin-right: 7rem;
 }
 
-#ourServices .sec2 h1{
+#myStory .sec2 h1{
     width: 35rem;
 }
 
 }
 
 @media only screen and (width< 800px) {
-    #ourServices .sec1{
+    #myStory .sec1{
         display: grid;
         grid-template-columns: 1fr;
         grid-auto-rows: 1fr;
        
     }
 
-    #ourServices .sec1.margin-bottom{
-        margin-bottom:2rem;
+    #myStory .sec1.margin-bottom{
+        
     } 
 
-    #ourServices .sec1 h1{
+    #myStory .sec1 h1{
         margin: 0;
         text-align: center;
     }
 
-    #ourServices .sec2 h1{
+    #myStory .sec2 h1{
         width: 80%;
     }
 
-    #ourServices .sec2.margin-bottom{
+    #myStory .sec2.margin-bottom{
         margin-bottom:2rem;
     } 
 
@@ -76,12 +76,12 @@
 
 /* smartphone */
 @media only screen and (width < 650px) {
-#ourServices .sec2 h1{
+#myStory .sec2 h1{
     width: 100%;
 }
 
 
-#ourServices .sec3{
+#myStory .sec3{
     width: calc(100% - 2rem);
     row-gap: 2rem;
 }

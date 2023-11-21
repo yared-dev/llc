@@ -112,3 +112,11 @@
 }
 
   }
+
+
+  @media only screen and (width< 800px) {
+    #myStory .panel .story-descrip{
+        padding: 0 3rem;   
+    }
+    
+  }

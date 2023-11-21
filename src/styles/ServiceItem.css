@@ -1,6 +1,6 @@
 #ourServices .sec3 .service-item {
   background-color: transparent;
-  height: 18rem;
+  height: 20rem;
   perspective: 1000px;
 }
 
@@ -98,3 +98,9 @@
   opacity: 0.85;
   }
   
+  @media only screen and (width < 1000px) {
+    #ourServices .sec3 .service-item .back h1{
+      font-size: 2rem;
+    }
+  
+  }

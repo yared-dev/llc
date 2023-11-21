@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { MdMenu } from "react-icons/md";
 import { MdClose } from "react-icons/md";
-import '../styles/Navigation.css';
+import "../styles/Navigation.css";
 
 const Navigation = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -53,9 +53,19 @@ const Navigation = () => {
       redirection: "#",
     },
   ];
+  const buttonSlide = (index: string, href: string) => {
+    const ref = document.getElementById(index)?.click();
+  };
   const listaElementos = MenuList.map((elemento, index) => (
-    <li key={index}>
-      <a href={elemento.redirection} onClick={() => setMenuOpen(false)}>
+    <li
+      key={index}
+      onClick={() => buttonSlide("#" + index.toString(), elemento.redirection)}
+    >
+      <a
+        id={"#" + index.toString()}
+        href={elemento.redirection}
+        onClick={() => setMenuOpen(false)}
+      >
         {elemento.tittle}
       </a>
     </li>
@@ -70,7 +80,9 @@ const Navigation = () => {
           </a>{" "}
         </div>
 
-        <ul className={`items background-white ${menuOpen ? "open" : ""}`}>{listaElementos}</ul>
+        <ul className={`items background-white ${menuOpen ? "open" : ""}`}>
+          {listaElementos}
+        </ul>
       </nav>
     </div>
   );

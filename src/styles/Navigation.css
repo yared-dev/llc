@@ -62,7 +62,7 @@
   box-shadow:
     0 0 5px rgba(0, 0, 0, 0.1),
     0 0 5px rgba(0, 0, 0, 0.2);
-    animation: heightMinMax 0.5s ease;
+  animation: heightMinMax 0.5s ease;
 }
 
 #navbar a {
@@ -77,19 +77,20 @@
   display: flex;
   width: 100%;
   height: 100%;
-  border-right: 1px solid #0000002b; 
-  border-left: 1px solid #0000002b;  
+  border-right: 1px solid #0000002b;
+  border-left: 1px solid #0000002b;
 }
 
 #navbar li a {
-  font-family: "Arial", sans-serif;
   text-transform: uppercase;
+  font-family: ui-rounded !important;
 }
 
 #navbar a:active {
   box-shadow: none;
   -webkit-tap-highlight-color: transparent;
 }
+
 #navbar li:hover a {
   color: white;
 }
@@ -103,7 +104,7 @@
   -o-transition: 0.6s;
 }
 
-@media only screen and  (width< 1000px) {
+@media only screen and (width< 1000px) {
 
   .logo {
     width: 100%;
@@ -114,13 +115,13 @@
     display: flex;
   }
 
-  .items{
+  .items {
     margin-top: 0px;
     width: 80%;
     height: auto;
-    border-radius: 0 0px 50px 50px; 
+    border-radius: 0 0px 50px 50px;
     z-index: 1;
-    
+
   }
 
   #navbar ul,
@@ -138,12 +139,12 @@
     -moz-transform: scaleY(0);
     -ms-transform: scaleY(0);
     -o-transform: scaleY(0);
-}
+  }
 
   #navbar li {
     width: 70%;
     padding: 2rem 0rem;
     border: none;
-    
+
   }
 }

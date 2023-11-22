@@ -50,6 +50,8 @@
   animation: slideInLeft 3s;
 }
 
+
+
 #aboutUs .sec1 .left button{
   font-weight: bold;
   text-transform: uppercase;
@@ -165,6 +167,15 @@
 #aboutUs .sec3 .metric p{
   font-weight: 500;
   font-size: 1rem;
+}
+
+/* Media query para tablets */
+@media only screen and (width < 1200px) {
+
+#aboutUs .sec1 {
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 35rem;
+}
 }
 
 /* Media query para tablets */

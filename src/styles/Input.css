@@ -1,0 +1,48 @@
+
+.input-container label{
+    font-size: 1.3rem;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.input-container input, textarea{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    outline: none;  
+    margin-bottom: 5px;    
+}
+
+.input-container textarea + label.currentLength{
+    position: absolute;
+    font-size: 1rem;
+    right: 5px;
+    bottom: 9px;
+    color: gray;
+    margin: 0px;
+    user-select: none;
+}
+
+.input-container input{
+    height: 2rem;
+}
+
+.input-container textarea{
+    height: 8rem;
+    resize: none;
+}
+
+.input-container .error-label{
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.input-container .show{
+    display: block;
+}
+
+.input-container .hide{
+    display: none;
+}
+
+  

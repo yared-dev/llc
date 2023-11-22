@@ -1,0 +1,37 @@
+.titleSection {
+ 
+}
+
+.titleSection h1 {
+  margin: 0;
+  margin-right: 14rem;
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+.titleSection .separator {
+  margin: 12px 0px;
+}
+
+@media only screen and (width< 1120px) {
+  .titleSection h1 {
+    margin-right: 7rem;
+  }
+}
+
+@media only screen and (width< 800px) {
+  .titleSection {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+  }
+
+  .titleSection.margin-bottom {
+    margin-bottom: 2rem;
+  }
+
+  .titleSection h1 {
+    margin: 0;
+    text-align: center;
+  }
+}

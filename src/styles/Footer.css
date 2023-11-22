@@ -1,0 +1,246 @@
+.footer{
+    grid-template-columns: 1fr 1fr 1fr;
+    height: auto;
+    grid-auto-rows: 1fr;
+    background-color: var(--footer-color);
+    padding: 3rem 0px;
+}
+
+.footer .column1 .colInside h4{
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: 500;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 2rem;
+}
+
+.footer .column3 .colInside .title{
+    margin-bottom: 2.5rem;
+}
+
+.footer .colInside .title  h2{
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+.footer .colInside .title{
+    font-size: 1.5rem;
+    height: 3rem;
+    border-bottom: 0.5rem solid var(--color-secondary);
+    margin-bottom: 1.7rem;
+    width: 60%;
+}
+
+.footer .colInside{
+    width: 100%;
+}
+
+.footer .column1, .column2, .column3{
+    align-items: center;
+}
+
+.footer .column1 .colInside, .column2 .colInside, .column3 .colInside{
+    align-items: center;
+    justify-content: center;    
+}
+
+.footer .column1 .colInside .logo{
+    width: auto;
+    height: 5rem;
+    padding: 0px;
+    margin-bottom: 1.5rem;
+}
+
+
+.footer .column1 .colInside .logo img{
+    max-width: 100%;
+  max-height: 100%; 
+}
+
+
+.footer .column1 .colInside .socialIcons{
+    gap: 0.5rem;
+}
+
+.footer .column1 .colInside .socialIcons{
+    width: 100%;
+}
+
+.footer .column1 .colInside .socialIcons .icon{
+    font-size: 2rem;
+    color: var(--color-secondary);
+}
+
+.footer .column2 .colInside .contactInfo h1{
+    font-weight: 400;
+}
+
+
+.footer .column2 .colInside .contactInfo .icon{
+    font-size: 1.2rem;
+    width: 5rem;
+}
+
+.footer .column2 .colInside .contactInfo{
+    align-items: center;
+    width: 100%;
+}
+
+.footer .column2 .colInside .contactInfo h1{
+    font-size: 1rem;
+    width: 100%;
+}
+
+.map{
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 20rem;
+}
+
+
+.footer .column1 .colInside{
+    width: 80%;
+}
+
+.footer .column2 .colInside .contactInfo{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.footer .column3 .colInside .map iframe{
+    border: none;
+}
+
+
+
+/* smartphone */
+@media only screen and (width < 1100px) {
+    .footer .column1 .colInside .logo{
+        height: 4rem;
+    }
+
+    
+    .footer .column1 .colInside h4{
+        font-size: 0.75rem;
+        line-height: 1.5rem;
+  }
+
+  .footer .column1 .colInside .socialIcons .icon{
+    font-size: 1.5rem;
+}
+
+    .footer .colInside h2{
+        font-size: 1.3rem;
+        padding-bottom: 0px;
+        margin: 0px;
+        height: 3rem;
+        line-height: 3.3rem;
+    }    
+
+    .footer .column2 .colInside .contactInfo h1{
+        font-size: 0.9rem;
+    }    
+
+    .footer .column2 .colInside .contactInfo{
+        padding-left: 1rem;
+     }
+
+     .footer .column2 .colInside .contactInfo .icon{
+        font-size: 1rem;
+        width: 3.5rem;
+     }
+
+     .map{
+        width: 17rem;
+     }
+    
+
+}
+
+
+
+/* smartphone */
+@media only screen and (width < 860px) {
+    .footer{
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+    }
+
+    .footer .column1, .column2, .column3{
+        width: 60%;
+        margin: 0px auto;
+    }
+
+    .footer .column1 .colInside .logo {
+        width: 100%;
+        height: 7rem;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 4rem;
+    }
+    
+    .footer .column1, .column2 {
+        margin-bottom: 8rem;
+    }
+
+    .footer .column1 .colInside .socialIcons{
+        justify-content: center;
+    }
+
+    
+    .footer .column1 .colInside .socialIcons .icon{
+        font-size: 2.3rem;
+    }
+
+    .footer .column1 .colInside h4{
+        font-size: 1.3rem;
+        line-height: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    .footer .colInside .title h2 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    .footer .column2 .colInside .title{
+        margin-bottom: 5rem;
+    }
+
+    .footer .column3 .colInside .title {
+        margin-bottom: 5rem;
+    }
+
+    .footer .column2 .colInside .contactInfo h1{
+        font-size: 1.3rem;
+    }
+
+    .footer .column2 .colInside .contactInfo .icon{
+        font-size: 1.3rem;
+    }
+
+.map{
+    width: 30rem;
+}
+
+    }
+    
+    
+
+/* smartphone */
+@media only screen and (width < 550px) {
+    .footer .column1, .column2, .column3 {
+        width: 90%;
+        margin: 0px auto;
+        margin-bottom: 7rem;
+    }
+
+.map{
+    width: 100%;
+}
+
+}   

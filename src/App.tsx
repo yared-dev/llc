@@ -4,6 +4,8 @@ import './App.css';
 import Us from './pages/AboutUs';
 import OurServices from './pages/OurServices';
 import MyHistory from './pages/MyStory';
+import ContactUs from './pages/ContactUs';
+import Footer from './pages/Footer';
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
     <Us />
     <OurServices />
     <MyHistory />
+    <ContactUs />
+    <Footer />
 </>
    
   );

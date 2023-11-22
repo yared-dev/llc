@@ -10,6 +10,7 @@ interface StoryPanelProps {
 
 }
 
+
 const StoryPanel: React.FC<StoryPanelProps> = ({
     title,
     descrip,

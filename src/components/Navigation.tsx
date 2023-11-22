@@ -44,14 +44,9 @@ const Navigation = () => {
       tittle: "Contact Us",
       childs: [],
       clicked: true,
-      redirection: "#",
+      redirection: "#contactUs",
     },
-    {
-      tittle: "MENU 5",
-      childs: [],
-      clicked: true,
-      redirection: "#",
-    },
+    
   ];
   const buttonSlide = (index: string, href: string) => {
     const ref = document.getElementById(index)?.click();
@@ -72,7 +67,7 @@ const Navigation = () => {
   ));
   return (
     <div className="header">
-      <nav id="navbar" className="container">
+      <nav id="navbar">
         {!menuOpen ? menuIcon : closeIcon}
         <div className="logo">
           <a href="#page-top">

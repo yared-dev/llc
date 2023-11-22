@@ -1,6 +1,7 @@
 :root {
   --color-primary: #061666; /* blue */
   --color-secondary: #D3AC07; /* golden */
+  --footer-color: #F2F2F2;
   --header-size: 7em;
   --navbar-width: 70em;
   --fontsize-header: 1rem;
@@ -21,6 +22,14 @@
   background-color: var(--color-primary);
 }
 
+.border-color-red{
+  border-color: red;
+}
+
+.border-color-primary{
+  border-color: var(--color-primary);
+}
+
 .color-primary{
   color:var(--color-primary);
 }
@@ -31,6 +40,10 @@
 
 .color-secondary{
   color:var(--color-secondary);
+}
+
+.color-red{
+  color: red;
 }
 
 .flex-1{
@@ -45,6 +58,9 @@
   flex-direction: column-reverse;
 }
 
+.flex-row{
+  flex-direction: row;
+}
 
 
 .background-image {
@@ -76,6 +92,10 @@
 
 .width-100{
   width: 100%;
+}
+
+.position-relative{
+  position: relative;
 }
 
 /* Media query para tablets */

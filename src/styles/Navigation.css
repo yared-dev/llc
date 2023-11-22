@@ -79,6 +79,7 @@
   height: 100%;
   border-right: 1px solid #0000002b;
   border-left: 1px solid #0000002b;
+  cursor: pointer;
 }
 
 #navbar li a {

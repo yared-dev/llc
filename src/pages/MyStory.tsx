@@ -1,3 +1,4 @@
+import SectionTitle from '../components/SectionTitle';
 import StoryPanel from '../components/StoryPanel';
 import '../styles/MyStory.css';
 
@@ -30,10 +31,7 @@ const MyStory = () => {
 
     return (
         <div id="myStory" className="flex flex-column">
-            <div className="sec1 content margin-bottom flex">
-                <h1 className='color-primary'>{title_}</h1>
-                <div className='separator background-color-secondary flex-1'></div>
-            </div>
+            <SectionTitle title={title_} colorSeparator="background-color-secondary" colorTitle='color-primary'/>
 
             <StoryPanel
                 title='Then (2013-2021)<br>US NAVY Reserve'

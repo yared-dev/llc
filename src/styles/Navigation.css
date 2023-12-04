@@ -3,6 +3,7 @@
   box-sizing: border-box;
   height: var(--header-size);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
 .menu {
@@ -84,7 +85,6 @@
 
 #navbar li a {
   text-transform: uppercase;
-  font-family: ui-rounded !important;
 }
 
 #navbar a:active {
@@ -146,6 +146,11 @@
     width: 70%;
     padding: 2rem 0rem;
     border: none;
+  }
+}
 
+@media only screen and (width < 650px) {
+  .menu{
+    right: 2rem;
   }
 }

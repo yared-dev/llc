@@ -1,0 +1,110 @@
+{
+    "nav": [
+        "Nosotros", "Servicios", "Historia", "Contáctanos"
+    ],
+    "home": {
+        "sec1": {
+            "title": "Antes y ahora, estoy comprometida a servir",
+            "toLight": [
+                "estoy",
+                "servir"
+            ],
+            "subtitle": "Isabel Gonzalez, Reserva naval E.E.U.U.",
+            "buttonText": "Clic aquí"
+        },
+        "sec2": [
+            {
+                "title": "Confiabilidad",
+                "description": "Encomendados con la responsabilidad de mantener la limpieza con servicios excepcionales que nuestros clientes respaldan con la más alta recomendación."
+            },
+            {
+                "title": "Satisfacción del Cliente",
+                "description": "Centrados en las necesidades del consumidor con el propósito de ofrecer los más altos estándares."
+            },
+            {
+                "title": "Alianza",
+                "description": "Permítanos trabajar en colaboración para la optimización del rendimiento en un entorno de trabajo limpio."
+            }
+        ]
+    },
+    "OurServices": {
+        "title": "Nuestros Servicios",
+        "sec2": {
+            "description": "Pongo mi empresa al servicio de tu negocio",
+            "toLight": [
+                "Pongo mi",
+                "tu negocio"
+            ]
+        },
+        "sec3": [
+            {
+                "title": "Optimizar el Rendimiento, Reducir Costos",
+                "description": "Simplificar operaciones, aumentar la eficiencia y reducir gastos con nuestras soluciones expertas.",
+                "more": "Leer más..."
+            },
+            {
+                "title": "Servicios Profesionales de Limpieza",
+                "description": "Limpieza impecable para espacios comerciales y residenciales. Confía en nuestros servicios confiables para un entorno impecable.",
+                "more": "Leer más..."
+            },
+            {
+                "title": "Soluciones para Construcción y Edificación",
+                "description": "Servicios integrales para proyectos de construcción y edificación. Desde el concepto hasta la finalización, entregamos excelencia en cada fase.",
+                "more": "Leer más..."
+            }
+        ]
+    },
+    "MyStory": {
+        "title": "Historia",
+        "then": {
+            "title": "Antes (2013-2021)<br>Reserva de la marina de E.E.U.U.",
+            "subtitle": "Impulsada por objetivos para mantener la motivación hacia un rendimiento excepcional.",
+            "features": [
+                "Liderazgo y compromiso para una fuerza confiable.",
+                "Ejercicios de campo y fortalecimiento de capacidades.",
+                "Servir a nuestra nación de manera proactiva con honor."
+            ]
+        },
+        "now": {
+            "title": "Ahora (2023 hasta hoy)",
+            "subtitle": "Mujer veterana dueña de un pequeño negocio comprometida a servir.",
+            "features": [
+                "El trabajo con propósito es esencial para nuestro trabajo y la satisfacción, participación y lealtad del cliente.",
+                "Acondicionamiento del lugar de trabajo con un entorno limpio y saludable."
+            ]
+        }
+    },
+    "ContactUs":{
+        "title":"Contáctanos",
+        "form":[
+            {
+                "title":"Nombre:",
+                "placeholder": "Ingrese un nombre"
+            },
+            {
+                "title":"Email:",
+                "placeholder": "ejemplo@hotmail.com",
+                "errorMsg":"Email inválido"
+            },
+            {
+                "title":"Phone:",
+                "placeholder": "(123) 123-1234",
+                "errorMsg": "Teléfono inválido"
+            },
+            {
+                "title":"¿Cómo podemos ayudarlo?:",
+                "placeholder": "Escriba aquí el mensaje..."
+            }
+        ],
+        "not_empty_error": "No se admite vacío",
+        "buttonText": "Enviar"
+    },
+    "Footer":{
+        "businessDecrption": "Community Interest Connection LLC es una organización propiedad de una mujer y de una veterana, centrada en las necesidades del consumidor y ofreciendo una variedad de servicios.",
+        "contactInfo":{
+            "title": "Contacto",
+            "schedule":"Lunes a Viernes"
+        },
+        "location":"Ubicación"
+    }
+}

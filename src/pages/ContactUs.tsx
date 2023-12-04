@@ -1,4 +1,5 @@
-import { ChangeEvent, useState} from 'react';
+import { ChangeEvent, useState, useEffect} from 'react';
+import { useTranslation } from 'react-i18next';
 import Input from '../components/Input';
 import SectionTitle from '../components/SectionTitle';
 import '../styles/ContactUs.css';
@@ -16,31 +17,36 @@ function formatPhoneNumber(value: string) {
 
 
 const ContactUs = () => {
-    const title_ = "Contact Us";
+    const [t, i18n] = useTranslation("global");
+    const title_ = t("ContactUs.title");
     const color_primary = "color-primary";
     const bg_color_secondary = "background-color-secondary";
     const imgContactUs = "img/pages/ContactUs/contact.png";
 
-    const not_empty_msg = "Not empty allowed.";
+    const not_empty_msg = t("ContactUs.not_empty_error");
     const inputs = [
         {
             type: "text",
-            label: "Name:",
+            label: t("ContactUs.form.0.title"),
+            placeholder:t("ContactUs.form.0.placeholder"),
             errorMsg: not_empty_msg,
         },
         {
             type: "email",
-            label: "Email:",
-            errorMsg: "Invalid email"
+            label: t("ContactUs.form.1.title"),
+            placeholder: t("ContactUs.form.1.placeholder"),
+            errorMsg: t("ContactUs.form.1.errorMsg")
         },
         {
             type: "tel",
-            label: "Phone:",
-            errorMsg: "Invalid phone"
+            label: t("ContactUs.form.2.title"),
+            placeholder: t("ContactUs.form.2.placeholder"),
+            errorMsg: t("ContactUs.form.2.errorMsg")
         },
         {
             type: "textarea",
-            label: "How can we help you?:",
+            label: t("ContactUs.form.3.title"),
+            placeholder: t("ContactUs.form.3.placeholder"),
             errorMsg: not_empty_msg
         }
     ];
@@ -52,10 +58,10 @@ const ContactUs = () => {
     const [inputPhone, setInputPhone] = useState('');
     const [current_, setCurrent] = useState(0);
 
-    const [errorName, setErrorName] = useState(inputs[0].errorMsg);
+    const [errorName, setErrorName] = useState(not_empty_msg);
     const [errorEmail, setErrorEmail] = useState(inputs[1].errorMsg);
     const [errorPhone, setErrorPhone] = useState(inputs[2].errorMsg);
-    const [errorMsg, setErrorMsg] = useState('');
+    const [errorMsg, setErrorMsg] = useState(not_empty_msg);
 
     const [isValidName, setValidName] = useState(true);
     const [isValidEmail, setValidEmail] = useState(true);
@@ -64,6 +70,7 @@ const ContactUs = () => {
 
     const maxLength_textArea = 500;
 
+    const buttonText = t("ContactUs.buttonText");
     
     const btnEnviarClicked = (e: React.MouseEvent<HTMLElement>) => {
         e.preventDefault();
@@ -107,7 +114,7 @@ const ContactUs = () => {
 
     function handleFocus(event: React.FocusEvent<HTMLInputElement|HTMLTextAreaElement>) {
         const { name } = event.target;
-        console.log(event);
+        console.log("evt "+ event);
         switch (name.toLowerCase()) {
             case 'name':
                 setValidName(true);
@@ -156,7 +163,8 @@ const ContactUs = () => {
     }
 
     function validName() {
-        if (!inputName || inputName.length! > 0) {
+        console.log("input "+ inputName);
+        if (!inputName || inputName.length < 1) {
             setErrorName(not_empty_msg);
             return false;
         } else {
@@ -174,6 +182,13 @@ const ContactUs = () => {
         }
     }
 
+    useEffect(() => {
+        setErrorName(prevError => prevError === not_empty_msg ? not_empty_msg : !validName() ? not_empty_msg : prevError);
+        setErrorEmail(prevError => prevError === not_empty_msg ? not_empty_msg : !validEmail() ? inputs[1].errorMsg : prevError);
+        setErrorPhone(prevError => prevError === not_empty_msg ? not_empty_msg : !validPhone() ? inputs[2].errorMsg : prevError);
+        setErrorMsg(prevError => prevError === not_empty_msg ? not_empty_msg : !validMsg() ? not_empty_msg : prevError);
+    }, [i18n.language]);
+    
 
     return (
         <div id="contactUs" className="flex flex-column">
@@ -185,12 +200,12 @@ const ContactUs = () => {
                 </div>
                 <div className='right flex flex-column'>
                     <div className='inputs flex flex-column'>
-                        <Input type={inputs[0].type} label={inputs[0].label} colorLabel='color-primary' borderColor='color-primary' errorLabel={errorName} error={!isValidName} onChange={handleChange} name={"name"} onFocus={handleFocus}/>
-                        <Input type={inputs[1].type} label={inputs[1].label} colorLabel='color-primary' borderColor='color-primary' errorLabel={errorEmail} error={!isValidEmail} onChange={handleChange} name={"email"} onFocus={handleFocus}/>
-                        <Input type={inputs[2].type} label={inputs[2].label} colorLabel='color-primary' borderColor='color-primary' errorLabel={errorPhone} error={!isValidPhone} onChange={handleChange} name={"phone"} value={inputPhone} onFocus={handleFocus}/>
-                        <Input type={inputs[3].type} label={inputs[3].label} colorLabel='color-primary' borderColor='color-primary' errorLabel={errorMsg} error={!isValidMsg} onChange={handleChange} name={"msg"} maxLength={maxLength_textArea} onFocus={handleFocus} current={current_}/>
+                        <Input type={inputs[0].type} placeholder={inputs[0].placeholder} label={inputs[0].label} colorLabel='color-primary' borderColor='color-primary' errorLabel={errorName} error={!isValidName} onChange={handleChange} name={"name"} onFocus={handleFocus}/>
+                        <Input type={inputs[1].type} placeholder={inputs[1].placeholder} label={inputs[1].label} colorLabel='color-primary' borderColor='color-primary' errorLabel={errorEmail} error={!isValidEmail} onChange={handleChange} name={"email"} onFocus={handleFocus}/>
+                        <Input type={inputs[2].type} placeholder={inputs[2].placeholder} label={inputs[2].label} colorLabel='color-primary' borderColor='color-primary' errorLabel={errorPhone} error={!isValidPhone} onChange={handleChange} name={"phone"} value={inputPhone} onFocus={handleFocus}/>
+                        <Input type={inputs[3].type} placeholder={inputs[3].placeholder} label={inputs[3].label} colorLabel='color-primary' borderColor='color-primary' errorLabel={errorMsg} error={!isValidMsg} onChange={handleChange} name={"msg"} maxLength={maxLength_textArea} onFocus={handleFocus} current={current_}/>
                     </div>
-                    <button className='button_container color-white background-color-primary' onClick={btnEnviarClicked}>Click me</button>
+                    <button className='button_container color-white background-color-primary' onClick={btnEnviarClicked}>{buttonText}</button>
                 </div>
                 </div>
             </div>

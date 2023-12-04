@@ -1,12 +1,12 @@
-import React from 'react';
 
-const GoogleMap = () => {
+
+const GoogleMap = ({src}:{src:string}) => {
   return (
     <iframe
       width="100%"
       height="100%"
       id="gmap_canvas"
-      src="https://maps.google.com/maps?width=523&amp;height=403&amp;hl=en&amp;q=central%20park%20ney%20york+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+      src= {src}
       title="Google Map"
     ></iframe>
   );
@@ -14,5 +14,4 @@ const GoogleMap = () => {
 
 export default GoogleMap;
 
-// Agrega la siguiente línea para resolver el error de TypeScript
 export {};

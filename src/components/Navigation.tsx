@@ -1,10 +1,15 @@
 import { useState } from "react";
 import { MdMenu } from "react-icons/md";
 import { MdClose } from "react-icons/md";
+import Translate from './Translate';
 import "../styles/Navigation.css";
+
+import { useTranslation } from 'react-i18next';
 
 const Navigation = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  
+  const [t, i18n] = useTranslation("global");
 
   const menuIcon = (
     <MdMenu
@@ -23,25 +28,25 @@ const Navigation = () => {
 
   const MenuList = [
     {
-      tittle: "About Us",
+      title: t("nav.0"),
       childs: [],
       clicked: true,
       redirection: "#aboutUs",
     },
     {
-      tittle: "Our Services",
+      title: t("nav.1"),
       childs: [],
       clicked: true,
       redirection: "#ourServices",
     },
     {
-      tittle: "My Story",
+      title:  t("nav.2"),
       childs: [],
       clicked: true,
       redirection: "#myStory",
     },
     {
-      tittle: "Contact Us",
+      title: t("nav.3"),
       childs: [],
       clicked: true,
       redirection: "#contactUs",
@@ -61,17 +66,18 @@ const Navigation = () => {
         href={elemento.redirection}
         onClick={() => setMenuOpen(false)}
       >
-        {elemento.tittle}
+        {elemento.title}
       </a>
     </li>
   ));
   return (
     <div className="header">
+       <Translate/>
       <nav id="navbar">
         {!menuOpen ? menuIcon : closeIcon}
         <div className="logo">
           <a href="#page-top">
-            <img src="img/logo.svg" alt="Logo LLC" />
+            <img src="img/logo.png" alt="Logo LLC" />
           </a>{" "}
         </div>
 

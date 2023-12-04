@@ -1,28 +1,25 @@
 import SectionTitle from '../components/SectionTitle';
 import StoryPanel from '../components/StoryPanel';
+import { useTranslation } from 'react-i18next';
 import '../styles/MyStory.css';
 
-const MyStory = () => {
+interface StorySectionStructure{
+    title: string;
+    subtitle: string;
+    features: string[]
+}
 
-    const title_ = "My Story";
+const MyStory = () => {
+    const [t, i18n] = useTranslation("global");
+
+    const title_ = t("MyStory.title");
     const sections = [
         {
-            title: "Then (2013-2021)<br>US NAVY Reserve",
-            text: "Motivación e Inspiración para lograr las metas",
-            list: [
-                "Servicio en Actividades de oficina, de campo y fisicas.",
-                "Siempre listos para defender la Patria con honor y coraje."
-            ],
+            objSection: t("MyStory.then") as unknown as StorySectionStructure,
             img: "img/pages/MyStory/navy2.jpg"
         },
         {
-            title: "Now (2023 until today)",
-            text: "Woman Veteran Own Bussiness Ready To serve",
-            list: [
-                "La meta es seguir inspirando y motivando con un excelente servicio.",
-                "Acondicionamiento y mejora de áreas específicas para una mejor labor.",
-                "Método eficiente de Alta Satisfacción al cliente"
-            ],
+            objSection: t("MyStory.now") as unknown as StorySectionStructure,
             img: "img/pages/MyStory/now1.jpg"
         }
     ]
@@ -34,25 +31,17 @@ const MyStory = () => {
             <SectionTitle title={title_} colorSeparator="background-color-secondary" colorTitle='color-primary'/>
 
             <StoryPanel
-                title='Then (2013-2021)<br>US NAVY Reserve'
-                descrip='Motivación e Inspiración para lograr las metas.'
-                list={[
-                    "Servicio en Actividades de oficina, de campo y fisicas.",
-                    "Siempre listos para defender la Patria con honor y coraje."
-                ]}
-                imgSrc='img/pages/MyStory/navy2.jpg' />
+                title={sections[0].objSection.title}
+                descrip={sections[0].objSection.subtitle}
+                list={sections[0].objSection.features}
+                imgSrc={sections[0].img} />
 
             <StoryPanel
-                title='Now (2023 until today)'
-                descrip='Woman Veteran Own Bussiness Ready To serve.'
-                list={[
-                    "La meta es seguir inspirando y motivando con un excelente servicio.",
-                    
-                    "Método eficiente de Alta Satisfacción al cliente.",
-                    "Acondicionamiento y mejora de áreas específicas para una mejor labor."
-                ]}
-                imgLeft={false}
-                imgSrc='img/pages/MyStory/now1.jpg' />
+                  title={sections[1].objSection.title}
+                  descrip={sections[1].objSection.subtitle}
+                  list={sections[1].objSection.features}
+                  imgSrc={sections[1].img}
+                imgLeft={false}/>
 
         </div>
     )

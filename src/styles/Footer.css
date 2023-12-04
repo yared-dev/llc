@@ -73,6 +73,14 @@
     color: var(--color-secondary);
 }
 
+
+.footer .column2 .contactInfo{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+
 .footer .column2 .colInside .contactInfo h1{
     font-weight: 400;
 }
@@ -80,18 +88,21 @@
 
 .footer .column2 .colInside .contactInfo .icon{
     font-size: 1.2rem;
-    width: 5rem;
 }
 
-.footer .column2 .colInside .contactInfo{
-    align-items: center;
-    width: 100%;
+
+.phones-container{
+    display: grid;
+    grid-template-columns:  1fr auto;
+    gap: 10px;
 }
 
 .footer .column2 .colInside .contactInfo h1{
     font-size: 1rem;
-    width: 100%;
+  
 }
+
+
 
 .map{
     display: flex;
@@ -105,10 +116,7 @@
     width: 80%;
 }
 
-.footer .column2 .colInside .contactInfo{
-    width: 100%;
-    box-sizing: border-box;
-}
+
 
 
 .footer .column3 .colInside .map iframe{
@@ -146,12 +154,12 @@
     }    
 
     .footer .column2 .colInside .contactInfo{
-        padding-left: 1rem;
+        column-gap: 1rem;
+
      }
 
      .footer .column2 .colInside .contactInfo .icon{
         font-size: 1rem;
-        width: 3.5rem;
      }
 
      .map{
@@ -176,7 +184,7 @@
     }
 
     .footer .column1 .colInside .logo {
-        width: 100%;
+        width: auto;
         height: 7rem;
         display: flex;
         justify-content: center;

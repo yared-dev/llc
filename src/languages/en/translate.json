@@ -1,0 +1,108 @@
+{
+    "nav": ["About Us", "Our Services", "My Story", "Contact Us"],
+    "home": {
+        "sec1": {
+            "title": "Then and Now… I am commited to serve",
+            "toLight": [
+                "I am",
+                "serve"
+            ],
+            "subtitle": "Isabel Gonzalez Eforce Us Navy Reserve",
+            "buttonText": "Click me"
+        },
+        "sec2": [
+            {
+                "title": "Reliability",
+                "description": "Entrusted with the responsibility of maintaining the cleanliness with exceptional services that our customers endorse with the highest recommendation."
+            },
+            {
+                "title": "Costumer Satisfaction",
+                "description": "Focused on the consumer needs with the purpose of offering the highest standards."
+            },
+            {
+                "title": "Alliance",
+                "description": "Allow us to work in partnership for the optimization of performance in a clean work environment."
+            }
+        ]
+    },
+    "OurServices": {
+        "title": "Our Services",
+        "sec2": {
+            "description": "Ready To Serve, Ready To Guide and Never Quit",
+            "toLight": [
+                "serve",
+                "guide"
+            ]
+        },
+        "sec3": [
+            {
+                "title": "Optimize Performance, Cut Costs",
+                "description": "Streamline operations, boost efficiency, and reduce expenses with our expert solutions",
+                "more": "Read more..."
+            },
+            {
+                "title": "Professional Cleaning Services",
+                "description": "Impeccable cleaning for commercial and residential spaces. Trust our reliable services for a spotless environment.",
+                "more": "Read more..."
+            },
+            {
+                "title": "Construction and Building Solutions",
+                "description": "Comprehensive services for construction and building projects. From concept to completion, we deliver excellence in every phase.",
+                "more": "Read more..."
+            }
+        ]
+    },
+    "MyStory": {
+        "title": "My Story",
+        "then": {
+            "title":"Then (2013-2021)<br>US NAVY Reserve",
+            "subtitle": "Goal driven to maintain the motivation for an outstanding performance.",
+            "features":[
+                "Leadership and commitment for a reliable force.",
+                "Field exercise and strengthing of capabilities.",
+                "Proactively serving our nation with honor."
+            ]
+        },
+        "now":{
+            "title":"Now (2023 until today)",
+            "subtitle": "Veteran Woman owned small business committed to serve.",
+            "features":[
+                "Purposeful work is essential to our job and client satisfaction, engagement and loyalty.",
+                "Conditioning of the workplace with a healthy and clean environment."
+            ]
+        }
+    },
+    "ContactUs":{
+        "title":"Contact Us",
+        "form":[
+            {
+                "title":"Name:",
+                "placeholder": "Write a name"
+            },
+            {
+                "title":"Email:",
+                "placeholder": "example@hotmail.com",
+                "errorMsg":"Invalid email"
+            },
+            {
+                "title":"Phone:",
+                "placeholder": "(123) 123-1234",
+                "errorMsg":"Invalid phone"
+            },
+            {
+                "title":"How can we help you?:",
+                "placeholder": "Write something..."
+            }
+        ],
+        "buttonText": "Send",
+        "not_empty_error": "Not empty allowed."
+    },
+    "Footer":{
+        "businessDecrption": "Comunity Interest Connection LLC is a woman-owned, veteran-owned organization focused on the consumer needs with a diversity of services.",
+        "contactInfo":{
+            "title": "Contact Info",
+            "schedule":"Monday to Friday"
+        },
+        "location":"Location"
+    }
+}

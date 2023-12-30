@@ -1,6 +1,7 @@
 
 import Navigation from './components/Navigation';
 import './App.css';
+import Presentation from './pages/Presentation';
 import AboutUs from './pages/AboutUs';
 import OurServices from './pages/OurServices';
 import MyHistory from './pages/MyStory';
@@ -15,9 +16,10 @@ function App() {
     <>
      
       <Navigation />
-      <AboutUs />
-      <OurServices />
+      <Presentation />
       <MyHistory />
+      <OurServices />
+      <AboutUs />
       <ContactUs />
       <Footer />
     </>

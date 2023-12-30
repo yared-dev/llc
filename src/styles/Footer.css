@@ -62,17 +62,14 @@
 
 .footer .column1 .colInside .socialIcons{
     gap: 0.5rem;
-}
-
-.footer .column1 .colInside .socialIcons{
     width: 100%;
 }
+
 
 .footer .column1 .colInside .socialIcons .icon{
     font-size: 2rem;
     color: var(--color-secondary);
 }
-
 
 .footer .column2 .contactInfo{
     display: grid;
@@ -83,6 +80,7 @@
 
 .footer .column2 .colInside .contactInfo h1{
     font-weight: 400;
+    font-size: 1rem;
 }
 
 
@@ -96,13 +94,6 @@
     grid-template-columns:  1fr auto;
     gap: 10px;
 }
-
-.footer .column2 .colInside .contactInfo h1{
-    font-size: 1rem;
-  
-}
-
-
 
 .map{
     display: flex;
@@ -224,7 +215,7 @@
     }
 
     .footer .column2 .colInside .contactInfo h1{
-        font-size: 1.3rem;
+        font-size: 1.0rem;
     }
 
     .footer .column2 .colInside .contactInfo .icon{

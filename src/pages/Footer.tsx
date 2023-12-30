@@ -42,6 +42,11 @@ const Footer = () => {
     const address_google = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3463.0420916032213!2d-95.7812199!3d29.776424399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864126dd182754bf%3A0x71a4c41d9650616a!2s23405%20W%20Fernhurst%20Dr%2C%20Katy%2C%20TX%2077494%2C%20EE.%20UU.!5e0!3m2!1ses-419!2spe!4v1701660541831!5m2!1ses-419!2spe";
 
 
+    const link_fb = "https://www.facebook.com/communityinterest";
+    const link_ig = "https://www.instagram.com/communityinterest/";
+    const link_wsp = "https://web.whatsapp.com/send?phone=17132818223";
+
+
     return (
         <div className='footer grid'>
             <div className='column1 flex flex-column'>
@@ -49,9 +54,9 @@ const Footer = () => {
                     <div className='logo'><img src={imgLogo} /></div>
                     <h4>{descriptionBusiness}</h4>
                     <div className='socialIcons flex flex-row' >
-                        <FaSquareFacebook className='icon' />
-                        <FaSquareInstagram className='icon' />
-                        <FaSquareWhatsapp className='icon' />
+                        <a href={link_fb} target="blank"><FaSquareFacebook className='icon' /></a>
+                        <a href={link_ig} target="blank"><FaSquareInstagram className='icon' /></a>
+                        <a href={link_wsp} target="blank"><FaSquareWhatsapp className='icon' /></a>
                     </div>
 
                 </div>

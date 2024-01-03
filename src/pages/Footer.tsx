@@ -19,7 +19,7 @@ const Footer = () => {
     const contact = [
         {
             name: "Isabel González",
-            phone: "713-2818223"
+            phone: "713-281-8223"
         },
         {
             name: "Carolina González",

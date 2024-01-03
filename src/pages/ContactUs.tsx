@@ -3,6 +3,8 @@ import { useTranslation } from 'react-i18next';
 import Input from '../components/Input';
 import SectionTitle from '../components/SectionTitle';
 import '../styles/ContactUs.css';
+import enviarCorreo from '../components/SendMail';
+
 
 function formatPhoneNumber(value: string) {
     if (!value) return value;
@@ -21,7 +23,7 @@ const ContactUs = () => {
     const title_ = t("ContactUs.title");
     const color_primary = "color-primary";
     const bg_color_secondary = "background-color-secondary";
-    const imgContactUs = "img/pages/ContactUs/contact.png";
+    const imgContactUs = "img/pages/ContactUs/contacto.jpg";
 
     const not_empty_msg = t("ContactUs.not_empty_error");
     const inputs = [
@@ -72,7 +74,7 @@ const ContactUs = () => {
 
     const buttonText = t("ContactUs.buttonText");
     
-    const btnEnviarClicked = (e: React.MouseEvent<HTMLElement>) => {
+    const btnEnviarClicked = async (e: React.MouseEvent<HTMLElement>) => {
         e.preventDefault();
 
         setValidName(validName());
@@ -85,7 +87,10 @@ const ContactUs = () => {
             console.log("Email: ", inputEmail);
             console.log("Telefono: ", inputPhone);
             console.log("Mensaje: ", inputMsg);
-        }
+
+            await enviarCorreo(inputName, inputEmail, 'Asunto del correo', inputMsg);
+    }
+
     };
 
     function handleChange(event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) {
@@ -189,8 +194,6 @@ const ContactUs = () => {
         setErrorMsg(prevError => prevError === not_empty_msg ? not_empty_msg : !validMsg() ? not_empty_msg : prevError);
     }, [i18n.language]);
     
-
-
 
     return (
         <div id="contactUs" className="flex flex-column">

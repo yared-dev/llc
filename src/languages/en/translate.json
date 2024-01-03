@@ -2,12 +2,11 @@
     "nav": ["About Us", "Our Services", "My Story", "Contact Us"],
     "home": {
         "sec1": {
-            "title": "Then and Now… I am commited to serve",
+            "title": "Woman-Owned <br> Veteran-Owned",
             "toLight": [
-                "I am",
-                "serve"
+               
             ],
-            "subtitle": "Isabel Gonzalez Eforce Us Navy Reserve",
+            "subtitle": "Isabel Gonzalez US NAVY Veteran",
             "buttonText": "Click me"
         },
         "sec2": [
@@ -55,7 +54,7 @@
     "MyStory": {
         "title": "My Story",
         "then": {
-            "title":"Then (2013-2021)<br>US NAVY Reserve",
+            "title":"Then (2013-2021)<br>US NAVY VETERAN",
             "subtitle": "Goal driven to maintain the motivation for an outstanding performance.",
             "features":[
                 "Leadership and commitment for a reliable force.",

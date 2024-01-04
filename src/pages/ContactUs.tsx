@@ -1,9 +1,10 @@
 import { ChangeEvent, useState, useEffect} from 'react';
 import { useTranslation } from 'react-i18next';
+import emailjs from '@emailjs/browser';
 import Input from '../components/Input';
 import SectionTitle from '../components/SectionTitle';
 import '../styles/ContactUs.css';
-import enviarCorreo from '../components/SendMail';
+
 
 
 function formatPhoneNumber(value: string) {
@@ -73,6 +74,20 @@ const ContactUs = () => {
     const maxLength_textArea = 500;
 
     const buttonText = t("ContactUs.buttonText");
+
+    const email_params = {
+        serviceID: process.env.REACT_APP_EMAIL_SERVICE_ID || "",
+    templateID: process.env.REACT_APP_EMAIL_TEMPLATE_ID || "",
+    publicKey: process.env.REACT_APP_EMAIL_PUBLIC_KEY || "",
+        body: {
+            sender_name: "",
+            sender_phone: "",
+            sender_email: "",
+            sender_message: ""
+        }
+    };
+     
+        
     
     const btnEnviarClicked = async (e: React.MouseEvent<HTMLElement>) => {
         e.preventDefault();
@@ -88,7 +103,20 @@ const ContactUs = () => {
             console.log("Telefono: ", inputPhone);
             console.log("Mensaje: ", inputMsg);
 
-            await enviarCorreo(inputName, inputEmail, 'Asunto del correo', inputMsg);
+            email_params.body = {
+                sender_name: inputName,
+                sender_phone: inputPhone,
+                sender_email: inputEmail,
+                sender_message: inputMsg
+            };
+
+            await emailjs.send(email_params.serviceID, email_params.templateID, email_params.body, email_params.publicKey)
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+            
     }
 
     };

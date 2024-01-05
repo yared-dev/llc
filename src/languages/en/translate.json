@@ -2,11 +2,14 @@
     "nav": ["About Us", "Our Services", "My Story", "Contact Us"],
     "home": {
         "sec1": {
-            "title": "Woman-Owned <br> Veteran-Owned",
+            "title": "Then and Now… I am commited to serve",
             "toLight": [
-               
+                "I am",
+                "serve"
             ],
-            "subtitle": "Isabel Gonzalez US NAVY Veteran",
+            "subtitle": "Isabel Gonzalez US NAVY Veteran Woman- Owned Veteran- Owned",
+            "subtitle1": "Woman- Owned ",
+            "subtitle2": "Veteran- Owned",
             "buttonText": "Click me"
         },
         "sec2": [

@@ -10,6 +10,8 @@ const Presentation = () => {
     const toLight_ = t("home.sec1.toLight") as unknown as string[];
   
     const subText = t("home.sec1.subtitle");
+    const subText1 = t("home.sec1.subtitle1");
+    const subText2 = t("home.sec1.subtitle2");
     const buttonText = t("home.sec1.buttonText");
 
     const [animationFinished, setAnimationFinished] = useState(false);
@@ -51,6 +53,8 @@ const Presentation = () => {
             <div className='decoration background-color-secondary'></div>
             <Tittle tittle={text_} toLight={toLight_} colorLight='color-secondary' />
             <h4>{subText}</h4>
+            <h4>{subText1}</h4>
+            <h4>{subText2}</h4>
           </div>
           <h4></h4>
           <button onClick={handleClick} className='button_container color-secondary background-white'>{buttonText}</button>

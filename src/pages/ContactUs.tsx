@@ -111,9 +111,9 @@ const ContactUs = () => {
             };
 
             await emailjs.send(email_params.serviceID, email_params.templateID, email_params.body, email_params.publicKey)
-            .then((result) => {
+            .then((result:any) => {
                 console.log(result.text);
-            }, (error) => {
+            }, (error:any) => {
                 console.log(error.text);
             });
             

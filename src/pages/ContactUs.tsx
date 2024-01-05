@@ -111,10 +111,17 @@ const ContactUs = () => {
             };
 
             await emailjs.send(email_params.serviceID, email_params.templateID, email_params.body, email_params.publicKey)
+<<<<<<< HEAD
             .then((result) => {
                 alert( t("ContactUs.ok_send"));
             }, (error) => {
                 alert( "ERROR!\n"+error.text);
+=======
+            .then((result:any) => {
+                console.log(result.text);
+            }, (error:any) => {
+                console.log(error.text);
+>>>>>>> 43ec504cdacd6c86204039f182de46db314482b0
             });
             
     }

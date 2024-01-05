@@ -21,13 +21,13 @@ const OurServices = () => {
 
     const serviceImages = [
         {
-          imgSrc: "/img/pages/OurServices/service4.jpg"
+          imgSrc: "/img/pages/OurServices/service1.jpg"
         },
         {
           imgSrc: "/img/pages/OurServices/service2.jpg"
         },
         {
-           imgSrc: "/img/pages/OurServices/service1.jpg"
+           imgSrc: "/img/pages/OurServices/service3.jpg"
         }
     ]
 

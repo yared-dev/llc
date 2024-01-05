@@ -24,7 +24,7 @@ const ContactUs = () => {
     const title_ = t("ContactUs.title");
     const color_primary = "color-primary";
     const bg_color_secondary = "background-color-secondary";
-    const imgContactUs = "img/pages/ContactUs/contacto.jpg";
+    const imgContactUs = "img/pages/ContactUs/contact.jpg";
 
     const not_empty_msg = t("ContactUs.not_empty_error");
     const inputs = [
@@ -112,9 +112,9 @@ const ContactUs = () => {
 
             await emailjs.send(email_params.serviceID, email_params.templateID, email_params.body, email_params.publicKey)
             .then((result) => {
-                console.log(result.text);
+                alert( t("ContactUs.ok_send"));
             }, (error) => {
-                console.log(error.text);
+                alert( "ERROR!\n"+error.text);
             });
             
     }

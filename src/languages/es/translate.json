@@ -4,12 +4,9 @@
     ],
     "home": {
         "sec1": {
-            "title": "Antes y ahora, estoy comprometida a servir",
-            "toLight": [
-                "estoy",
-                "servir"
-            ],
-            "subtitle": "Isabel Gonzalez, Reserva naval E.E.U.U.",
+            "title": "Mujer Propietaria <br> Veterana Propietaria",
+            "toLight": [],
+            "subtitle": "Isabel Gonzalez, Veterana de la Marina de los EE. UU.",
             "buttonText": "Clic aquí"
         },
         "sec2": [
@@ -57,7 +54,7 @@
     "MyStory": {
         "title": "Historia",
         "then": {
-            "title": "Antes (2013-2021)<br>Reserva de la marina de E.E.U.U.",
+            "title": "Antes (2013-2021)<br>VETERANA, MARINA DE LOS EE. UU.",
             "subtitle": "Impulsada por objetivos para mantener la motivación hacia un rendimiento excepcional.",
             "features": [
                 "Liderazgo y compromiso para una fuerza confiable.",
@@ -97,7 +94,8 @@
             }
         ],
         "not_empty_error": "No se admite vacío",
-        "buttonText": "Enviar"
+        "buttonText": "Enviar",
+        "ok_send": "Mensaje enviado correctamente"
     },
     "Footer":{
         "businessDecrption": "Community Interest Connection LLC es una organización propiedad de una mujer y de una veterana, centrada en las necesidades del consumidor y ofreciendo una variedad de servicios.",

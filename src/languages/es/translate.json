@@ -4,9 +4,14 @@
     ],
     "home": {
         "sec1": {
-            "title": "Mujer Propietaria <br> Veterana Propietaria",
-            "toLight": [],
+            "title": "Antes y ahora, estoy comprometida a servir",
+            "toLight": [
+                "estoy",
+                "servir"
+            ],
             "subtitle": "Isabel Gonzalez, Veterana de la Marina de los EE. UU.",
+            "subtitle1": "Mujer- propietaria",
+            "subtitle2": "Veterano- propietario",
             "buttonText": "Clic aquí"
         },
         "sec2": [

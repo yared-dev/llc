@@ -2,7 +2,10 @@
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: 28rem;
     color: var(--color-primary);
-    column-gap: 3rem;
+}
+
+#myStory .panel.second{
+    grid-auto-rows: 40rem;
 }
 
 
@@ -16,7 +19,7 @@
 
 #myStory .panel .story-descrip .title-border{
     border-bottom: 1rem solid var(--color-secondary);
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 #myStory .panel .story-descrip .title-border h1{
@@ -29,16 +32,23 @@
 #myStory .panel .story-descrip p{
     font-style: italic;
     font-weight: 600;
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
 }
+
+#myStory .panel .story-descrip p.more-text {
+    font-style: normal;
+    font-weight: 500;
+}
+
 
 #myStory .panel .story-descrip ul{
     display: flex;
     flex-direction: column;
     list-style: none;
     padding: 0px;
-    gap: 1.5rem;
+    gap: 2rem;
+    height: 100%;
 }
 
 #myStory .panel .story-descrip ul li{
@@ -50,73 +60,96 @@
     color: var(--color-secondary);
     font-weight: bold; 
     display: flex; 
-    width: 40px; 
-    font-size: 3rem;
+    width: 25px; 
+    font-size: 2.5rem;
+    align-items: center;
+    line-height: 0px;
   }
 
   #myStory .panel .story-descrip ul li span{
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     display: flex;
     align-items: center;
     width: fit-content;
   }
 
+  @media only screen and (width> 1380px) {
+    #myStory .panel.second{
+        grid-auto-rows: 35rem;
+    }
+  }
+
+  
+
+
   @media only screen and (width< 1200px) {
 
-    #myStory .panel .story-descrip p{
-        margin-bottom: 1rem;
-    }
     
     #myStory .panel .story-descrip ul li span{
         font-size: 1.3rem;
     }
   }
 
-  @media only screen and (width< 1000px) {
+  @media only screen and (width< 1100px) {
 
-
-    #myStory .panel .story-descrip .title-border{
-         margin-bottom: 1.5rem;
-    }
-
-    #myStory .panel .story-descrip p{
-        margin-bottom: 0.5rem;
-    }
+    
     
     #myStory .panel .story-descrip ul li span{
         font-size: 1.3rem;
     }
 
-    #myStory .panel .story-descrip ul{
-        gap: 1rem;
+    #myStory .panel.second {
+        grid-auto-rows: 45rem;
     }
-
+    
   }
 
 
 
-  @media only screen and (width< 800px) {
+  @media only screen and (width< 950px) {
     #myStory .panel{
         display: flex;
-        gap: 3rem;
     }
 
     #myStory .panel .story-descrip, img{
         flex: 1;
     }
 
-
-    
-#myStory .panel .story-descrip{
-    padding: 0 6rem;   
-}
-
-  }
-
-
-  @media only screen and (width< 800px) {
     #myStory .panel .story-descrip{
         padding: 0 3rem;   
     }
+
+    #myStory .panel .story-descrip .title-border h1{
+        text-align: center;
+    }
+  
+
+
+  }
+
+
+  @media only screen and (width< 930px) {
+    
+    #myStory .panel.second {
+        grid-auto-rows: 51rem;
+    }
+  }
+
+  @media only screen and (width< 650px) {
+  #myStory .panel .story-descrip {
+    padding: 0 2rem;
+}
+  }
+
+
+  @media only screen and (width< 440px) {
+    #myStory .panel .story-descrip{
+        padding: 0 1rem;   
+    }
+    #myStory .panel .story-descrip .title-border h1{
+        font-size: 1.7rem;
+    }
     
   }
+
+   

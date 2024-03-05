@@ -8,6 +8,9 @@ interface ServiceStructure {
     title: string;
     description: string;
     more: string;
+    less:string;
+    list:string[];
+    moreText:string;
   }
 
 const OurServices = () => {
@@ -36,7 +39,7 @@ const OurServices = () => {
     return (
         <div id="ourServices" className="flex flex-column">
             <SecctionTitle title={title_} colorTitle={colorPrimary} colorSeparator={bg_colorSecondary}/>
-            <div className="sec2 flex color-primary margin-bottom">
+            <div className="sec2 flex color-primary margin-bottom content">
                 <Tittle tittle={text_} toLight={toLight_} colorLight='color-secondary' />
             </div>
             <div className="sec3 grid width-100 margin-bottom">
@@ -44,11 +47,14 @@ const OurServices = () => {
                     <ServiceItem
                         title={item.title}
                         descrip={item.description}
-                        span={item.more}
+                        span_state_0={item.more}
+                        span_state_1={item.less}
                         imgSrc={serviceImages[index].imgSrc}
                         backColor={index % 2 == 0 ? "background-color-primary" : "background-white"}
                         textColor={index % 2 == 0 ?'color-white':"color-primary"}
                         spanColor={'color-secondary'}
+                        list={item.list}
+                        moreText={item.moreText??null}
                     />
                 ))}
 

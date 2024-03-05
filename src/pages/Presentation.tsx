@@ -6,12 +6,12 @@ import '../styles/AboutUs.css'
 const Presentation = () => {
 
     const [t, i18n] = useTranslation("global");
-    const text_ = t("home.sec1.title");
+    const title_ = t("home.sec1.title");
     const toLight_ = t("home.sec1.toLight") as unknown as string[];
   
     const subText = t("home.sec1.subtitle");
-    const subText1 = t("home.sec1.subtitle1");
-    const subText2 = t("home.sec1.subtitle2");
+    const text = t("home.sec1.text");
+    
     const buttonText = t("home.sec1.buttonText");
 
     const [animationFinished, setAnimationFinished] = useState(false);
@@ -45,18 +45,17 @@ const Presentation = () => {
 
     return(
 
-        <div id="aboutUs" className='flex flex-column margin-bottom'>
+        <div id="presentation" className='flex flex-column margin-bottom'>
         
-        <div className="sec1 grid">
+        <div className="sec1 grid gap-3rem">
         <div className={`flex flex-column left ${animationFinished ? 'finished' : ''}`}>
           <div style={{ position: 'relative' }}>
             <div className='decoration background-color-secondary'></div>
-            <Tittle tittle={text_} toLight={toLight_} colorLight='color-secondary' />
-            <h4>{subText}</h4>
-            <h4>{subText1}</h4>
-            <h4>{subText2}</h4>
+            <Tittle tittle={title_} toLight={toLight_} colorLight='color-secondary' style={{ textTransform: 'uppercase' }}/>
+            <h1>{subText}</h1>
+            <h4>{text}</h4><br></br>
           </div>
-          <h4></h4>
+          
           <button onClick={handleClick} className='button_container color-secondary background-white'>{buttonText}</button>
         </div>
         <div className='flex flex-column'>
@@ -64,7 +63,7 @@ const Presentation = () => {
         </div>
       </div>
       
-      <div className='grid width-100'>
+      <div className='grid gap-3rem width-100'>
           <div className='separator background-color-secondary'></div>
         </div>
   

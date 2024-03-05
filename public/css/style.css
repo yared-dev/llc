@@ -75,6 +75,10 @@
   display: grid;
 }
 
+.gap-3rem{
+  gap: 3rem;
+}
+
 .flex {
   display: flex;
 }
@@ -96,6 +100,10 @@
 
 .position-relative{
   position: relative;
+}
+
+.justify-text{
+  text-align: justify
 }
 
 /* Media query para tablets */
@@ -121,6 +129,13 @@
   padding: 0px 3rem;
   box-sizing: border-box;
  }
+
+
+  .background-image {
+    background-position: 65% center;
+
+}
+
 }
 
 

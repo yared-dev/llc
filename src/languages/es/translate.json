@@ -1,17 +1,10 @@
 {
-    "nav": [
-        "Nosotros", "Servicios", "Historia", "Contáctanos"
-    ],
+    "nav": ["Nosotros", "Cultura", "Capacidades", "Contáctanos"],
     "home": {
         "sec1": {
-            "title": "Antes y ahora, estoy comprometida a servir",
-            "toLight": [
-                "estoy",
-                "servir"
-            ],
-            "subtitle": "Isabel Gonzalez, Veterana de la Marina de los EE. UU.",
-            "subtitle1": "Mujer- propietaria",
-            "subtitle2": "Veterano- propietario",
+            "title": "Isabel González",
+            "subtitle": "Veterana de la Marina de los EE. UU.",
+            "text": "Como negocio propiedad de una mujer y veterana, hoy y siempre prevalece el compromiso de servir. En Community Interest Connection LLC, operamos desde un sentido de propósito y pertenencia, conectando con las comunidades a las que servimos con una misión significativa. Creemos que el trabajo que realizamos en equipo tiene un impacto duradero en la satisfacción de las necesidades de nuestros clientes y honramos a Dios siempre a través de actos de rectitud.",
             "buttonText": "Clic aquí"
         },
         "sec2": [
@@ -30,50 +23,55 @@
         ]
     },
     "OurServices": {
-        "title": "Nuestros Servicios",
+        "title": "Capacidades",
         "sec2": {
-            "description": "Pongo mi empresa al servicio de tu negocio",
-            "toLight": [
-                "Pongo mi",
-                "tu negocio"
-            ]
+            "description": "Clientes comerciales y residenciales aplicaron programas con contratistas generales profesionales y flexibles, soluciones de construcción y servicios de limpieza en un horario de mantenimiento rutinario o servicio único según solicitud."
         },
         "sec3": [
             {
-                "title": "Optimizar el Rendimiento, Reducir Costos",
+                "title": "Confiable y precio justo",
                 "description": "Simplificar operaciones, aumentar la eficiencia y reducir gastos con nuestras soluciones expertas.",
-                "more": "Leer más..."
+                "more": "Ver más...",
+                "less": "Ver menos..."                      
+            },
+            {
+                "title": "Contratistas Generales y Soluciones para la Construcción",
+                "description": "Servicios integrales para proyectos de construcción y edificación. Desde el concepto hasta la finalización, entregamos excelencia en cada fase.",
+                "more": "Ver más...",
+                "less": "Ver menos..."                   
             },
             {
                 "title": "Servicios Profesionales de Limpieza",
                 "description": "Limpieza impecable para espacios comerciales y residenciales. Confía en nuestros servicios confiables para un entorno impecable.",
-                "more": "Leer más..."
-            },
-            {
-                "title": "Soluciones para Construcción y Edificación",
-                "description": "Servicios integrales para proyectos de construcción y edificación. Desde el concepto hasta la finalización, entregamos excelencia en cada fase.",
-                "more": "Leer más..."
+                "moreText": " ",
+                "more": "Ver más...",
+                "less": "Ver menos...",
+                "list": [
+                    "Desinfección y sanitización.",
+                    "Servicios de esterilización y limpieza.",
+                    "Limpieza de alfombras a vapor.",
+                    "Mantenimiento de baldosas y juntas.",
+                    "Limpieza de eventos.",
+                    "Otros servicios de construcción."
+                    ]
             }
         ]
     },
     "MyStory": {
-        "title": "Historia",
+        "title": "Cultura",
         "then": {
             "title": "Antes (2013-2021)<br>VETERANA, MARINA DE LOS EE. UU.",
-            "subtitle": "Impulsada por objetivos para mantener la motivación hacia un rendimiento excepcional.",
+            "subtitle": "Siempre he mantenido un destacado compromiso con el servicio comunitario. Como veterana de la Armada de los Estados Unidos de 2013 a 2021, serví a nuestro país y continúo sirviendo a toda nuestra comunidad.",
             "features": [
                 "Liderazgo y compromiso para una fuerza confiable.",
                 "Ejercicios de campo y fortalecimiento de capacidades.",
                 "Servir a nuestra nación de manera proactiva con honor."
-            ]
+            ]           
         },
         "now": {
             "title": "Ahora (2023 hasta hoy)",
-            "subtitle": "Mujer veterana dueña de un pequeño negocio comprometida a servir.",
-            "features": [
-                "El trabajo con propósito es esencial para nuestro trabajo y la satisfacción, participación y lealtad del cliente.",
-                "Acondicionamiento del lugar de trabajo con un entorno limpio y saludable."
-            ]
+            "subtitle": "Comprometidos en la construcción de comunidades más fuertes. Participamos activamente en colaboración con organizaciones sin fines de lucro para cumplir nuestro propósito y deseo de ayudar a empoderar a las comunidades locales.",
+            "moreText": "Nuestra generosidad con una donación mensual permite la misión de transformar a personas heridas en familias saludables a través de la esperanza de Dios, impulsada por diferentes programas como Distribución de Alimentos, Voluntarios, Clases para Padres y el Programa de Regreso a la Escuela. <a href='www.familyhopefulshear.org'>FAMILY HOPE</a><br><br>Formar parte del programa de voluntariado llevó a nuestra CEO, Isabel González, a recibir un Reconocimiento del Congreso por los esfuerzos heroicos para ayudar a los texanos necesitados durante la Pandemia de COVID-19, presentado por el Representante Pete Olson el 21 de septiembre de 2020, y sigue comprometida con la misión y destino de servir.<br><br>Comunidades. Nuestra generosidad se refleja en horas de voluntariado liderando el programa HEROES AGAIN con el objetivo de crear conciencia en la comunidad sobre la salud mental y física mediante conversaciones sobre TEPT, suicidio, ansiedad, depresión, soledad, siendo juguetones, conscientes, y alentando a los demás. <a href='www.fitmixcommunities.org'>FIT MIX</a>"
         }
     },
     "ContactUs":{

@@ -2,6 +2,7 @@ import '../styles/Footer.css';
 import { FaSquareFacebook } from "react-icons/fa6";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { FaSquareWhatsapp } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
 import { FaPhone } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
 import { IoTime } from "react-icons/io5";
@@ -45,6 +46,7 @@ const Footer = () => {
     const link_fb = "https://www.facebook.com/communityinterest";
     const link_ig = "https://www.instagram.com/communityinterest/";
     const link_wsp = "https://web.whatsapp.com/send?phone=17132818223";
+    const link_lIn = "https://www.linkedin.com/in/isabel-gonzalez-7ba4242b1/";
 
 
     return (
@@ -57,6 +59,7 @@ const Footer = () => {
                         <a href={link_fb} target="blank"><FaSquareFacebook className='icon' /></a>
                         <a href={link_ig} target="blank"><FaSquareInstagram className='icon' /></a>
                         <a href={link_wsp} target="blank"><FaSquareWhatsapp className='icon' /></a>
+                        <a href={link_lIn} target="blank"><FaLinkedin className='icon' /></a>
                     </div>
 
                 </div>

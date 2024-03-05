@@ -37,13 +37,13 @@ const Navigation = () => {
       title: t("nav.1"),
       childs: [],
       clicked: true,
-      redirection: "#ourServices",
+      redirection: "#myStory",
     },
     {
       title:  t("nav.2"),
       childs: [],
       clicked: true,
-      redirection: "#myStory",
+      redirection: "#ourServices",
     },
     {
       title: t("nav.3"),

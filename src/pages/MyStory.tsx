@@ -6,7 +6,8 @@ import '../styles/MyStory.css';
 interface StorySectionStructure{
     title: string;
     subtitle: string;
-    features: string[]
+    features: string[];
+    moreText?: string
 }
 
 const MyStory = () => {
@@ -16,11 +17,11 @@ const MyStory = () => {
     const sections = [
         {
             objSection: t("MyStory.then") as unknown as StorySectionStructure,
-            img: "img/pages/MyStory/navy2.jpg"
+            img: "img/pages/MyStory/navy2.png"
         },
         {
             objSection: t("MyStory.now") as unknown as StorySectionStructure,
-            img: "img/pages/MyStory/now1.jpg"
+            img: "img/pages/MyStory/now1.png"
         }
     ]
 
@@ -37,11 +38,13 @@ const MyStory = () => {
                 imgSrc={sections[0].img} />
 
             <StoryPanel
+                  index= "second"
                   title={sections[1].objSection.title}
                   descrip={sections[1].objSection.subtitle}
                   list={sections[1].objSection.features}
                   imgSrc={sections[1].img}
-                imgLeft={false}/>
+                  imgLeft={false}
+                  moreText={sections[1].objSection.moreText}/>
 
         </div>
     )

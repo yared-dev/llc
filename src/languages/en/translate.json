@@ -1,5 +1,5 @@
 {
-    "nav": ["About Us", "Culture", "Capabilities", "Contact Us"],
+    "nav": ["Capabilities", "Culture", "About Me", "Contact Us"],
     "home": {
         "sec1": {
             "title": "Isabel Gonzalez",
@@ -70,9 +70,9 @@
            
         },
         "now":{
-            "title":"Now (2023 until today)",
-            "subtitle": "Committed to building stronger communities. We engage actively in partnership with nonprofit organizations to fulfil our purpose and desire which is to help empower local communities.",
-            "moreText": "Our generosity with a monthly donation enables their mission of transforming hurting people into healthy families through the hope of God driven by the different programs such as Food Distribution, Volunteers, Parenting Classes and Back to School Program. <a href='www.familyhopefulshear.org'>FAMILY HOPE</a><br><br>Being part of the volunteer program, our CEO Isabel Gonzalez was awarded a Congressional Recognition for the heroic efforts helping Texans in need during the COVID-19 Pandemic presented by Representative Pete Olson on 21st September 2020, and remains committed to the mission and destiny to serve.<br><br>Communities Our generosity with volunteer hours leading the program HEROES AGAIN with the goal of raising awareness in the community about mental and physical health through conversation about PTSD, Suicide, Anxiety, Depression, Loneliness being playful, mindful, uplifting others. <a href='www.fitmixcommunities.org'>FIT MIX</a>"
+            "title":"Nowadays (2022 until today)",
+            "subtitle": "",
+            "moreText": "Our generosity with a monthly donation enables their mission of transforming hurting people into healthy families through the hope of God driven by the different programs such as Food Distribution, Volunteers, Parenting Classes and Back to School Program <a href='www.familyhopefulshear.org'>FAMILY HOPE</a>. <br> Being part of the volunteer program, our CEO Isabel Gonzalez was awarded a Congressional Recognition for the heroic efforts helping Texans in need during the COVID-19 Pandemic presented by Representative Pete Olson on 21st September 2020, and remains committed to the mission and destiny to serve communities.<br>Our generosity with donation to fitmixcommunities.org also volunteer hours leading the program HEROES AGAIN with the goal of raising awareness in the community about mental and physical health through conversation about PTSD, Suicide, Anxiety, Depression, Loneliness being playful, mindful, uplifting others."
         }
     },
     "ContactUs":{

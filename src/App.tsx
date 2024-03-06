@@ -16,10 +16,10 @@ function App() {
     <>
      
       <Navigation />
-      <Presentation />
-      <MyHistory />
       <OurServices />
       <AboutUs />
+      <MyHistory />
+      <Presentation />
       <ContactUs />
       <Footer />
     </>
